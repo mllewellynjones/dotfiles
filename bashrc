@@ -118,3 +118,12 @@ fi
 
 # Make VI my default editor
 EDITOR=vim:
+
+# Add the scripts folder to my path
+PATH=$PATH:~/scripts
+
+# Make virtualenvwrapper happy
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+source /usr/local/bin/virtualenvwrapper.sh
+
