@@ -59,10 +59,10 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 let mapleader = ","
 map <leader>y "*y
 " Move around splits with <c-hjkl>
-nnoremap <c-s> <c-w>j
-nnoremap <c-d> <c-w>k
-nnoremap <c-a> <c-w>h
-nnoremap <c-f> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 nnoremap <leader>v :vsp<CR>
 
@@ -86,11 +86,15 @@ nmap <leader>t :CommandT<cr>
 set wildignore+=*.pyc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" YCM
+" Code Folding
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_python_binary_path = 'python'
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+set foldlevel=99
+nmap <space> za
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Code Navigation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pymode_rope_goto_definition_bind = "<leader>d"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM Test
