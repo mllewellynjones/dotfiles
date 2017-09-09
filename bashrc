@@ -128,3 +128,5 @@ export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
 export PROJECT_HOME=~/Documents
 source /usr/local/bin/virtualenvwrapper.sh
 
+# UK keyboard layout
+setxkbmap gb
