@@ -1,3 +1,10 @@
 *.pyc
 tags
 .ropeproject
+__pycache__/
+.coveragerc
+.editorconfig
+.gitattributes
+.pylintrc
+.travis.yml
+
